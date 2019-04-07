@@ -7,4 +7,5 @@ Ren Yang, Xiaoyan Sun, Mai Xu and Wenjun Zeng, "Quality-Gated Convolutional LSTM
 
 # Contact
 Email: r.yangchn@gmail.com
+
 WeChat: yangren93
