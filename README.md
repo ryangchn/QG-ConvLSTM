@@ -5,7 +5,9 @@ Ren Yang, Xiaoyan Sun, Mai Xu and Wenjun Zeng, "Quality-Gated Convolutional LSTM
 
 # Test Codes
 The code is to test our model on the sequence BasketballPass compressed by HEVC at QP = 42. The raw and compressed sequences can be dowbloaded from: 
+
 https://drive.google.com/file/d/1l5HUCisQqezywCzdEKRXg0buarVlfdiG/view?usp=sharing
+
 https://drive.google.com/file/d/1R0BNnOyJACCGzz1P2O-9Gc1JQIwR2jPq/view?usp=sharing
 
 Please first download the raw and compressed sequences and than run test.py to evaluate.
