@@ -3,6 +3,17 @@ The project page of the paper:
 
 Ren Yang, Xiaoyan Sun, Mai Xu and Wenjun Zeng, "Quality-Gated Convolutional LSTM for Enhancing Compressed Video", in IEEE International Conference on Multimedia and Expo (ICME), 2019.
 
+Please cite our paper as:
+
+@inproceedings{yang2017decoder,
+  title={Quality-Gated Convolutional LSTM for Enhancing Compressed Video},
+  author={Yang, Ren and Sun, Xiaoyan and Xu, Mai and Zeng, Wenjun},
+  booktitle={2019 IEEE International Conference on Multimedia and Expo (ICME)},
+  year={2019},
+  organization={IEEE}
+}
+
+
 # Test Codes
 The code is to test our model on the sequence BasketballPass compressed by HEVC at QP = 42. The raw and compressed sequences can be dowbloaded from: 
 
