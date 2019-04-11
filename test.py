@@ -65,7 +65,7 @@ def sig(x):
 
     return y, a
 
-os.environ['CUDA_VISIBLE_DEVICES'] = os.environ["SGE_GPU"]
+# os.environ['CUDA_VISIBLE_DEVICES'] = os.environ["SGE_GPU"]
 
 config = tf.ConfigProto(allow_soft_placement = True)
 sess = tf.Session(config = config)
