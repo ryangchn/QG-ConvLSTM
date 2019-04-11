@@ -17,7 +17,11 @@ Please first download the raw and compressed sequences and than run test.py to e
 
 ## Generate feature.npy file
 
-As discribed in the paper, we utilize quality-related features to generate the gates in ConvLSTM. In our code, feature.npy (e.g., BasketballPass_HEVC_QP42_quality_features.npy) contains a variable named 'feat', which is a matrix with shape [frame number, 38], i.e., each row is a 38-dimansion feature for one frame. feat[frame number, 0:36] is obtained by the method of [1] with code at http://live.ece.utexas.edu/research/quality/BRISQUE_release.zip. feat[frame number, 36] and feat[frame number, 37] are the QP and total bits of the frame, respectively. 
+As discribed in the paper, we utilize quality-related features to generate the gates in ConvLSTM. In our code, feature.npy (e.g., BasketballPass_HEVC_QP42_quality_features.npy) contains a variable named 'feat', which is a matrix with shape [frame number, 38], i.e., each row is a 38-dimansion feature for one frame. 
+
+feat[frame number, 0:36] is obtained by the method of [1] with code at http://live.ece.utexas.edu/research/quality/BRISQUE_release.zip. 
+
+feat[frame number, 36] and feat[frame number, 37] are the QP and total bits of the frame, respectively. 
 
 
 [1] A. Mittal, A. K. Moorthy, and A. C. Bovik, “No-reference image quality assessment in the spatial domain,” IEEE Transactions on Image Processing, pp. 4695–4708, 2012.
