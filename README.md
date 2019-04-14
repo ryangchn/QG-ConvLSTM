@@ -25,6 +25,8 @@ python test.py --name RaceHorses --frames 300 --height 240 --width 416
 
 to evaluate.
 
+The trained model for HEVC at QP = 37 is also available here.
+
 ## Generate feature.npy file
 
 As discribed in the paper, we utilize quality-related features to generate the gates in ConvLSTM. In our code, feature.npy (e.g., BasketballPass_HEVC_QP42_quality_features.npy) contains a variable named 'feat', which is a matrix with shape [frame number, 38], i.e., each row is a 38-dimansion feature for one frame. 
