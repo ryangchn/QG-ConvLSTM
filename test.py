@@ -97,7 +97,7 @@ forget, update = generate_weight(x_out)
 outputs = network.net_bi_wcell(x2, forget, update, step, Height, Width, filter_num, kernel, relu, CNNlayer, peephole = False, scale = False)
 
 saver = tf.train.Saver()
-saver.restore(sess, './QP42_bi_wcell_PQF_finetune/model.ckpt-200000')
+saver.restore(sess, './QP42_model/model.ckpt-200000')
 
 # num_params = 0
 # for variable in tf.trainable_variables():
