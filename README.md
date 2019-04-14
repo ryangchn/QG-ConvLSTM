@@ -19,7 +19,7 @@ https://drive.google.com/file/d/1qiW5T3QLKwGMH5VP9ds0z1UqSG7WqS9G/view?usp=shari
 
 Please first download the raw and compressed sequences and than run 
 
-python test.py --name BasketnallPass --frames 500 --height 240 --width 416
+python test.py --name BasketballPass --frames 500 --height 240 --width 416
 
 python test.py --name RaceHorses --frames 300 --height 240 --width 416
 
