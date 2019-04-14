@@ -7,13 +7,23 @@ Ren Yang, Xiaoyan Sun, Mai Xu and Wenjun Zeng, "Quality-Gated Convolutional LSTM
 
 ## Test Code
 
-This code is a demo to test our model on the sequence *BasketballPass* compressed by HEVC at QP = 42. The raw and compressed sequences can be dowbloaded from: 
+This code is a demo to test our model on the sequence *BasketballPass* and *RaceHorses* compressed by HEVC at QP = 42. The raw and compressed sequences can be dowbloaded from: 
 
 https://drive.google.com/file/d/1l5HUCisQqezywCzdEKRXg0buarVlfdiG/view?usp=sharing
 
 https://drive.google.com/file/d/1R0BNnOyJACCGzz1P2O-9Gc1JQIwR2jPq/view?usp=sharing
 
-Please first download the raw and compressed sequences and than run test.py to evaluate.
+https://drive.google.com/file/d/1ggmiu1N5CWZDR7b_qwgEdi0YLHc1nh2w/view?usp=sharing
+
+https://drive.google.com/file/d/1qiW5T3QLKwGMH5VP9ds0z1UqSG7WqS9G/view?usp=sharing
+
+Please first download the raw and compressed sequences and than run 
+
+python test.py --name BasketnallPass --frames 500 --height 240 --width 416
+
+python test.py --name RaceHorses --frames 300 --height 240 --width 416
+
+to evaluate.
 
 ## Generate feature.npy file
 
@@ -27,7 +37,7 @@ feat[frame number, 0:36] is obtained by the method of [1] with code at http://li
 
 ## Notice
 
-Note that since the original codes were lost, these codes are re-implemented by the authors. The test results are very comparable with the reported numbers in the paper, but may be slightly different. For example, the PSNR improvement on BasketballPass at QP = 42 is 0.6061 dB (these codes) v.s. 0.6066 dB (Table 1 in the paper).  
+Note that since the original codes were lost, these codes are re-implemented by the authors. The test results are very comparable with the reported numbers in the paper, but may be slightly different. For example, the PSNR improvement on BasketballPass at QP = 42 is 0.6086 dB (these codes) v.s. 0.6066 dB (Table 1 in the paper), and that on RaceHorses at QP = 42 is 0.4143 dB (these codes) v.s. 0.4062 dB (Table 1 in the paper).  
 
 # Contact
 Email: r.yangchn@gmail.com
