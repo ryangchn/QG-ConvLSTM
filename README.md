@@ -37,7 +37,7 @@ feat[frame number, 0:36] is obtained by the method of [1] with code at http://li
 
 ## Notice
 
-Note that since the original codes were lost, these codes are re-implemented by the authors. The test results are very comparable with the reported numbers in the paper, but may be slightly different. For example, the PSNR improvement on BasketballPass at QP = 42 is 0.6086 dB (these codes) v.s. 0.6066 dB (Table 1 in the paper), and that on RaceHorses at QP = 42 is 0.4143 dB (these codes) v.s. 0.4062 dB (Table 1 in the paper).  
+Note that since the original codes were lost, these codes are re-implemented by the authors. The test results may be slightly different from that in paper, but are very comparable with or even better than the reported numbers in our paper. For example, the PSNR improvement on BasketballPass at QP = 42 is 0.6086 dB (these codes) v.s. 0.6066 dB (Table 1 in the paper), and that on RaceHorses at QP = 42 is 0.4143 dB (these codes) v.s. 0.4062 dB (Table 1 in the paper).  
 
 # Contact
 Email: r.yangchn@gmail.com
