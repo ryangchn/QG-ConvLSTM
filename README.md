@@ -31,7 +31,7 @@ The trained model for HEVC at QP = 37 is also available here.
 
 As discribed in the paper, we utilize quality-related features to generate the gates in ConvLSTM. In our code, feature.npy (e.g., BasketballPass_HEVC_QP42_quality_features.npy) contains a variable named 'feat', which is a matrix with shape [frame number, 38], i.e., each row is a 38-dimansion feature for one frame. 
 
-feat[frame number, 0:36] is obtained by the method of [1] with code at 
+The feat[frame number, 0:36] is obtained by the method of [1] with codes at 
 
 http://live.ece.utexas.edu/research/quality/BRISQUE_release.zip. 
 
