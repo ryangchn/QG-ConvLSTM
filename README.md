@@ -50,6 +50,6 @@ For example, the PSNR improvement on *BasketballPass* at QP = 42 is 0.6086 dB (t
 # Contact
 Email: r.yangchn@gmail.com
 
-Whatsapp: +41 798317872
+WhatsApp: +41 798317872
 
 WeChat: yangren93
