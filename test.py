@@ -33,15 +33,13 @@ step = 22
 
 def generate_weight(x_out):
 
-    for s in range(step):
+    u_weight = tf.expand_dims(x_out, axis=-1)
+    u_weight = tf.expand_dims(u_weight, axis=-1)
+    u_weight = tf.expand_dims(u_weight, axis=-1)
 
-        u_weight = tf.expand_dims(x_out, axis=-1)
-        u_weight = tf.expand_dims(u_weight, axis=-1)
-        u_weight = tf.expand_dims(u_weight, axis=-1)
+    u_weight = tf.tile(u_weight, [1, 1, Height, Width, 1])
 
-        u_weight = tf.tile(u_weight, [1, 1, Height, Width, 1])
-
-        f_weight = tf.ones([batch_size, step, Height, Width, Channel]) - u_weight
+    f_weight = tf.ones([batch_size, step, Height, Width, Channel]) - u_weight
 
     return f_weight, u_weight
 
