@@ -43,12 +43,6 @@ The feat[frame number, 36] and feat[frame number, 37] are the QP and total bits 
 [1] A. Mittal, A. K. Moorthy, and A. C. Bovik, “No-reference image quality assessment in the spatial domain,” IEEE Transactions on Image Processing, pp. 4695–4708, 2012.
 
 
-## Notice
-
-Note that since the original codes were lost, these codes are re-implemented by the authors. The test results may be slightly different from the paper, but are very comparable with or even better than the reported numbers in our paper. 
-
-For example, the PSNR improvement on *BasketballPass* at QP = 42 is 0.6086 dB (these codes) v.s. 0.6066 dB (Table 1 in the paper), and that on *RaceHorses* at QP = 42 is 0.4143 dB (these codes) v.s. 0.4062 dB (Table 1 in the paper).  
-
 # Contact
 Email: r.yangchn@gmail.com
 
