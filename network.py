@@ -1,5 +1,5 @@
 import tensorflow as tf
-from cell import ConvLSTMCell
+from cell import QGConvLSTMCell
 
 def CNN(x, step, filter_no, filter_no_last, kernel, relu, layer, scale, name):
 
@@ -54,7 +54,7 @@ def net_bi_wcell(x, f, u, step, Height, Width, filter_num, kernel, relu, CNNlaye
 
     inputs = tf.concat([x1, f, u], axis = -1)
 
-    cell = ConvLSTMCell(shape=[Height, Width], filters = filter_num, kernel = kernel, peephole = peephole)
+    cell = QGConvLSTMCell(shape=[Height, Width], filters = filter_num, kernel = kernel, peephole = peephole)
 
     x2, state = tf.nn.bidirectional_dynamic_rnn(cell, cell, inputs, dtype = inputs.dtype)
 
