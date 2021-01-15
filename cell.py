@@ -79,7 +79,7 @@ class QGConvLSTMCell(tf.nn.rnn_cell.RNNCell):
   """
 
   def __init__(self, shape, filters, kernel, forget_bias=1.0, activation=tf.tanh, normalize=False, peephole=False, data_format='channels_last', reuse=None):
-    super(QGConvLSTMCell, self).__init__(_reuse=reuse)
+    super(QGConvLSTMCell, self).__init__(_reuse=reuse, name='conv_lstm_cell')
     self._kernel = kernel
     self._filters = filters
     self._forget_bias = forget_bias
