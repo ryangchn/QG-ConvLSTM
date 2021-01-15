@@ -72,14 +72,14 @@ class ConvLSTMCell_orig(tf.nn.rnn_cell.RNNCell):
 
     return h, state
 
-class ConvLSTMCell(tf.nn.rnn_cell.RNNCell):
+class QGConvLSTMCell(tf.nn.rnn_cell.RNNCell):
   """A LSTM cell with convolutions instead of multiplications.
   Reference:
     Xingjian, S. H. I., et al. "Convolutional LSTM network: A machine learning approach for precipitation nowcasting." Advances in Neural Information Processing Systems. 2015.
   """
 
   def __init__(self, shape, filters, kernel, forget_bias=1.0, activation=tf.tanh, normalize=False, peephole=False, data_format='channels_last', reuse=None):
-    super(ConvLSTMCell, self).__init__(_reuse=reuse)
+    super(QGConvLSTMCell, self).__init__(_reuse=reuse)
     self._kernel = kernel
     self._filters = filters
     self._forget_bias = forget_bias
