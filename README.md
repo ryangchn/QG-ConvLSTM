@@ -45,7 +45,3 @@ The feat[frame number, 36] and feat[frame number, 37] are the QP and total bits 
 
 # Contact
 Email: r.yangchn@gmail.com
-
-WhatsApp: +41 798317872
-
-WeChat: yangren93
